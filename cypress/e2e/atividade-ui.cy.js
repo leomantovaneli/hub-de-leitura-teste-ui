@@ -33,7 +33,7 @@ describe('Atividade prática de automação com Cypress,', () => {
         //Resultado esperado: Exibir livro Harry Potter
     })
 
-    it.only('Deve adicionar um livro à cesta e finalizar reserva', () => {
+    it('Deve adicionar um livro à cesta e finalizar reserva', () => {
         cy.visit('login.html')
         cy.get('#email').type('teste29@testeatividadeebac.com')
         cy.get('#password').type('TesteEBAC@123')
